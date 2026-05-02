@@ -1,8 +1,8 @@
 import Navbar from "../../components/Navbar/navbar"
-import Hero from "../../components/Hero"
-import Highlights from "../../components/Highlights"
-import Cards from "../../components/Cards"
-import Footer from "../../components/Footer"
+import Hero from "../../components/Hero/index"
+import Highlights from "../../components/Highlights/index"
+import Cards from "../../components/Cards/index"
+import Footer from "../../components/Footer/index"
 import { EQUIPO_VENTAS } from "../../dummy/dummy-info"
 
 function HomePage(){
