@@ -1,15 +1,23 @@
-export const DUMMY_DATOS = [
-  {
-    id: 1,
-    name: "MARCUS STERLING",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/assets/analyst1.png"
+export const EQUIPO_VENTAS = [
+  { 
+    id: 1, 
+    name: "MARCUS STERLING", 
+    role: "Vendedor", 
+    specialty: "Calzado de Running",
+    quote: "Te ayudo a encontrar la zapatilla perfecta para tu pisada." 
   },
-  {
-    id: 2,
-    name: "SARAH JENKINS",
-    quote: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/assets/analyst2.png"
+  { 
+    id: 2, 
+    name: "SARAH JENKINS", 
+    role: "Proveedor", 
+    specialty: "Equipamiento NBA",
+    quote: "Traemos las camisetas oficiales directamente desde EE.UU." 
   },
-
+  { 
+    id: 2, 
+    name: "SARAH JENKINS", 
+    role: "Proveedor", 
+    specialty: "Equipamiento NBA",
+    quote: "Traemos las camisetas oficiales directamente desde EE.UU." 
+  },
 ];

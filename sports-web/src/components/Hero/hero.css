@@ -1,0 +1,80 @@
+
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 520px;
+  background-color: #1c1c1c;
+  color: gray;
+  border-bottom: 2px solid gray;
+  
+}
+
+
+.hero-visual, .hero-text {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text {
+  padding: 60px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ab72a5;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;      
+  margin-bottom: 40px;     
+  color: #ccc;          
+  max-width: 90%;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+.btn-read {
+  background-color: white;     /* Azul Stadium */
+  color: black;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: auto;
+  width: 220px;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+.btn-read:hover {
+  background-color: #ab72a5;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 100vh;
+    height: 100%;  
+  }
+
+  .btn-read {
+    width: 165px;
+  }
+}

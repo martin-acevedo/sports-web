@@ -1,13 +1,16 @@
-
+import "./navbar.css";
+import { Link } from 'react-router-dom';
 
 function Navbar(){
     return(
-        <nav>
-            <div>
-                <h1>NOMBREWEB</h1>
+        <nav className="navbar">
+            <div className="navbar-logo">
+                <h1>MA-STORE</h1>
             </div>
-            <div>
-                <button>INICIAR SESIÓN</button>
+            <div className="navbar-actions">
+                <Link to="/catalogo">
+                    <button className="btn-ventas">EXPLORAR COLECCIONES</button>
+                </Link>
             </div>
         </nav>
     );

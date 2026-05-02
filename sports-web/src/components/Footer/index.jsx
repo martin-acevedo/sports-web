@@ -1,33 +1,60 @@
-
+import "./footer.css";
+import { useState } from 'react';
+import Modal from '../Modal';
+import { Link } from 'react-router-dom';
 
 function Footer() {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <footer>
-      <hr /> {/* Línea divisoria que se ve en la imagen */}
-      <div>
-        {/* Lado izquierdo: Iconos sociales o de apps */}
-        <div>
-          <span>Icono1</span>
-          <span>Icono2</span>
-          <span>Icono3</span>
+    <footer className="footer-container">
+      <div className="footer-top">
+        {/* Lado Izquierdo: Redes Sociales */}
+        <div className="social-icons">
+          <a href="https://x.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-tiktok"></i>
+          </a>
         </div>
 
-        {/* Centro: Logo y Copyright */}
-        <div>
-          <h3>STADIUM</h3>
-          <p>STADIUM CITY, 2026</p>
-          <p>© 2026 STADIUM MEDIA. ALL RIGHTS RESERVED.</p>
-        </div>
-
-        {/* Lado derecho: Links legales */}
-        <div>
-          <a href="#">DEVELOPER</a>
-          <a href="#">TERMS</a>
-          <a href="#">PRIVACY</a>
+        {/* Lado Derecho: Link de Desarrollador */}
+        <div className="developer-link">
+          <a 
+            href="#!" 
+            onClick={(e) => {
+              e.preventDefault(); 
+              setShowModal(true);
+            }}
+          >
+            Desarrollador
+          </a>
         </div>
       </div>
+
+      {/* Fila Inferior: Ciudad y Año */}
+      <div className="footer-bottom">
+        <p>Talca, 2026</p>
+      </div>
+
+      {/* Llamada al Modal Externo */}
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)} />
     </footer>
   );
 }
+
+
 
 export default Footer;

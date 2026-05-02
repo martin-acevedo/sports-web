@@ -1,0 +1,100 @@
+.highlights {
+  display: flex;
+  background-color: #1c1c1c; /* Mantenemos el fondo oscuro */
+  color: white;
+  align-items: center;
+  min-height: 80vh; /* Un buen alto para que destaque */
+  border-bottom: 2px solid gray;
+}
+
+.highlights-text {
+  flex: 1;
+  padding: 80px;
+}
+
+.highlights-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.highlights-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;      
+  margin-bottom: 40px;     
+  color: #ccc;          
+  max-width: 90%;
+}
+
+/* 1. Contenedor del efecto: debe tener position: relative */
+.hover-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Clave para que las imágenes se superpongan */
+  height: 500px;      /* Dale un alto fijo al contenedor */
+  overflow: hidden;   /* Opcional: si las imágenes son muy grandes */
+}
+
+/* Estilo base para ambas imágenes */
+.highlights-img {
+  max-height: 90%;    /* Para que no toquen los bordes */
+  width: auto;
+  position: absolute; /* Las saca del flujo y las superpone */
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%); /* Las centra perfectamente */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 2. La imagen del frente es la principal */
+.img-front {
+  opacity: 1;       /* Visible por defecto */
+  z-index: 2;       /* Arriba */
+}
+
+/* 3. La imagen de atrás está oculta */
+.img-back {
+  opacity: 0;       /* Invisible por defecto */
+  z-index: 1;       /* Abajo */
+}
+
+.hover-container:hover .img-front {
+  opacity: 0;
+}
+
+.hover-container:hover .img-back {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .highlights {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    padding: 40px 35px;
+  }
+
+  .highlights-img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .hover-container {
+    height: auto;
+    min-height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+
+}

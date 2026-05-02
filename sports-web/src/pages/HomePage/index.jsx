@@ -3,7 +3,7 @@ import Hero from "../../components/Hero"
 import Highlights from "../../components/Highlights"
 import Cards from "../../components/Cards"
 import Footer from "../../components/Footer"
-import { DUMMY_DATOS } from "../../dummy/dummy-info"
+import { EQUIPO_VENTAS } from "../../dummy/dummy-info"
 
 function HomePage(){
     return <div>
@@ -11,11 +11,11 @@ function HomePage(){
         <Hero />
         <Highlights />
 
-        <section className="datos-section">
-            <h2>FEATURED <span>ANALYSTS</span></h2>
-            <div className="datos-grid">
-                {DUMMY_DATOS.map((analyst) => (
-                <Cards key={analyst.id} data={analyst} />
+        <section className="cards-section">
+            <h2 className="text">COLABORADORES</h2>
+            <div className="cards-grid">
+                {EQUIPO_VENTAS.map((persona) => (
+                <Cards key={persona.id} member={persona} />
             ))}
             </div>
         </section>
@@ -24,4 +24,4 @@ function HomePage(){
     </div>
 }
 
-export default HomePage
+export default HomePage;

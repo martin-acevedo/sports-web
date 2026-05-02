@@ -1,20 +1,23 @@
-
+import "./hero.css";
+import shoesImg from "../../assets/shoes.png";
+import { Link } from 'react-router-dom';
 
 function Hero (){
     return (
-        <section>
+        <section className="hero">
             {/* img principal */}
-            <div>
-                <span>LOREM IPSUM</span>
-                <img src="https://images.deadspin.com/tr:w-900/S8f93662c-2ab5-4090-bee0-cebe4a7ac274.jpg" alt="Lamelo Ball" />
+            <div className="hero-visual">
+                <img src={shoesImg} alt="imagen 1" className="hero-img" />
             </div>
             {/* texto */}
-            <div>
-                <h1>LOREM IPSUM</h1>
+            <div className="hero-text">
+                <h1>DOMINA LA CANCHA</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing, elit ridiculus integer mus tellus sem, in ac orci consequat eu. Sem cubilia facilisi nostra curae ut odio ligula magnis, neque sodales dui lectus nibh accumsan urna mauris, ultricies commodo varius enim fermentum nisi in.
+                    Descubre la nueva colección de calzado diseñada para ofrecerte máxima amortiguación y un estilo que no pasa desapercibido. Tecnología avanzada para que cada salto cuente.
                 </p>
-                <button>READ MORE</button>
+                <Link to="/catalogo">
+                    <button className="btn-read">EXPLORAR COLECCIONES</button>
+                </Link>
             </div>
         </section>
     );
