@@ -1,4 +1,4 @@
-import Navbar from "../../components/navbar"
+import Navbar from "../../components/Navbar/navbar"
 import Hero from "../../components/Hero"
 import Highlights from "../../components/Highlights"
 import Cards from "../../components/Cards"
