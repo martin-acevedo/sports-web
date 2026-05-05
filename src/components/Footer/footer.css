@@ -1,6 +1,6 @@
 .footer-container {
   padding: 40px 10%;
-  border-top: 1px solid #eee; /* Línea divisoria sutil */
+  border-top: 1px solid #eee; 
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -8,27 +8,27 @@
   color: white;
 }
 
-/* Fila de arriba con Flexbox */
+
 .footer-top {
   display: flex;
-  justify-content: space-between; /* Empuja iconos a la izq y link a la der */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 .social-icons {
   display: flex;
-  gap: 15px; /* Espacio entre cada icono de red social */
+  gap: 15px; 
   font-size: 1.2rem;
   color: white;
 }
 
 .developer-link a {
-  color: white; /* Color azul del link como en la imagen */
+  color: white; 
   font-size: 1.1rem; 
 }
 
-/* Fila de abajo centrada */
+
 .footer-bottom {
   text-align: center;
   width: 100%;
@@ -40,11 +40,11 @@
 .social-icons i {
   cursor: pointer;
   transition: color 0.3s;
-  color: white; /* El color oscuro de la guía */
+  color: white; 
   
 }
 
-/* Efecto opcional: que cambien de color al pasar el mouse */
+
 .social-icons i:hover {
   color: #ab72a5; 
 }

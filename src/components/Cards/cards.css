@@ -1,14 +1,14 @@
 .cards-grid {
-  display: flex;            /* Activamos Flexbox */
-  justify-content: center;  /* Centramos el grupo de cards */
-  gap: 20px;                /* Espacio entre ellas */
+  display: flex;           
+  justify-content: center; 
+  gap: 20px;             
   padding: 40px 5%;
   width: 100%;
 }
 
 .card-container {
-  flex: 1;                  /* Esto hace que todas las cards midan lo mismo */
-  min-width: 250px;         /* Evita que se aplasten demasiado */
+  flex: 1;                 
+  min-width: 250px;        
   background-color: rgb(175, 164, 164);
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -17,7 +17,7 @@
 }
 
 .card-header {
-  display: flex;            /* Flexbox interno para icono + nombre */
+  display: flex;         
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;

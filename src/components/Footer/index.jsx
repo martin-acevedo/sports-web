@@ -44,12 +44,11 @@ function Footer() {
         </div>
       </div>
 
-      {/* Fila Inferior: Ciudad y Año */}
       <div className="footer-bottom">
         <p>Talca, 2026</p>
       </div>
 
-      {/* Llamada al Modal Externo */}
+      {/* Llamada al Modal */}
       <Modal isOpen={showModal} onClose={() => setShowModal(false)} />
     </footer>
   );

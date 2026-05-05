@@ -1,9 +1,9 @@
 .highlights {
   display: flex;
-  background-color: #1c1c1c; /* Mantenemos el fondo oscuro */
+  background-color: #1c1c1c; 
   color: white;
   align-items: center;
-  min-height: 80vh; /* Un buen alto para que destaque */
+  min-height: 80vh; 
   border-bottom: 2px solid gray;
 }
 
@@ -26,40 +26,38 @@
   max-width: 90%;
 }
 
-/* 1. Contenedor del efecto: debe tener position: relative */
+
 .hover-container {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Clave para que las imágenes se superpongan */
-  height: 500px;      /* Dale un alto fijo al contenedor */
-  overflow: hidden;   /* Opcional: si las imágenes son muy grandes */
+  position: relative; 
+  height: 500px;     
+  overflow: hidden; 
 }
 
-/* Estilo base para ambas imágenes */
 .highlights-img {
-  max-height: 90%;    /* Para que no toquen los bordes */
+  max-height: 90%;    
   width: auto;
-  position: absolute; /* Las saca del flujo y las superpone */
+  position: absolute; 
   top: 50%;
   left: 50%;
   border-radius: 20px;
-  transform: translate(-50%, -50%); /* Las centra perfectamente */
+  transform: translate(-50%, -50%); 
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* 2. La imagen del frente es la principal */
 .img-front {
-  opacity: 1;       /* Visible por defecto */
-  z-index: 2;       /* Arriba */
+  opacity: 1;       
+  z-index: 2;       
 }
 
-/* 3. La imagen de atrás está oculta */
+
 .img-back {
-  opacity: 0;       /* Invisible por defecto */
-  z-index: 1;       /* Abajo */
+  opacity: 0;      
+  z-index: 1;       
 }
 
 .hover-container:hover .img-front {

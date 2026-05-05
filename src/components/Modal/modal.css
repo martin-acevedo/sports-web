@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro con opacidad */
+  background-color: rgba(0, 0, 0, 0.85); /* opacidad */
   display: flex;
   justify-content: center;
   align-items: center;

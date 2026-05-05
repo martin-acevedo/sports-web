@@ -22,7 +22,7 @@ function Highlights() {
           className="highlights-img img-back" 
         />
         <img 
-          src={Img1} // Imagen de frente (esta se ve primero)
+          src={Img1} // Imagen de frente 
           alt="Camiseta Frente" 
           className="highlights-img img-front" 
         />

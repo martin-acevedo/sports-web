@@ -1,7 +1,7 @@
 .cards-grid {
-  display: flex;         /* ¡La clave! Los pone uno al lado del otro */
-  flex-direction: row;   /* Asegura que sea en fila */
-  gap: 20px;             /* El espacio entre Marcus, Sarah, etc. */
-  padding: 40px 10%;     /* Centra el grupo en la pantalla */
+  display: flex;        
+  flex-direction: row; 
+  gap: 20px;          
+  padding: 40px 10%;  
   width: 100%;
 }
