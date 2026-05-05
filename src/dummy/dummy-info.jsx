@@ -14,10 +14,10 @@ export const EQUIPO_VENTAS = [
     quote: "Traemos las camisetas oficiales directamente desde EE.UU." 
   },
   { 
-    id: 2, 
-    name: "SARAH JENKINS", 
+    id: 3, 
+    name: "MARCUS MARTIN", 
     role: "Proveedor", 
-    specialty: "Equipamiento NBA",
-    quote: "Traemos las camisetas oficiales directamente desde EE.UU." 
+    specialty: "Equipamiento Nike",
+    quote: "Traemos oficiales desde NIKE EE.UU." 
   },
 ];
