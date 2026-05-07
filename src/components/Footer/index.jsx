@@ -1,10 +1,9 @@
 import "./footer.css";
 import { useState } from 'react';
-import Modal from '../Modal';
 import { Link } from 'react-router-dom';
 
 function Footer() {
-  const [showModal, setShowModal] = useState(false);
+
   return (
     <footer className="footer-container">
       <div className="footer-top">
@@ -32,24 +31,17 @@ function Footer() {
 
         {/* Lado Derecho: Link de Desarrollador */}
         <div className="developer-link">
-          <a 
-            href="#!" 
-            onClick={(e) => {
-              e.preventDefault(); 
-              setShowModal(true);
-            }}
-          >
-            Desarrollador
-          </a>
+          <Link to="/desarrollador">
+            <a>
+              Desarrollador
+            </a>
+          </Link>
         </div>
       </div>
 
       <div className="footer-bottom">
         <p>Talca, 2026</p>
       </div>
-
-      {/* Llamada al Modal */}
-      <Modal isOpen={showModal} onClose={() => setShowModal(false)} />
     </footer>
   );
 }

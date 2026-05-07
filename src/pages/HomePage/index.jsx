@@ -13,12 +13,13 @@ function HomePage(){
 
         <section className="cards-section">
             <h2 className="text">COLABORADORES</h2>
-            <div className="cards-grid">
-                {EQUIPO_VENTAS.map((persona) => (
-                <Cards key={persona.id} member={persona} />
+            <div className="cards-dummy">
+                {EQUIPO_VENTAS.map((member) => (
+                <Cards key={member.id} member={member} />
             ))}
             </div>
         </section>
+        
 
     <Footer />
     </div>
